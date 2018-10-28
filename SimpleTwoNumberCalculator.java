@@ -39,22 +39,22 @@ public class SimpleTwoNumberCalculator {
             input.nextLine();
 
             // Ask user for arithmetic operation of choice
-            System.out.println("Choose between addition, subtraction, multiplication, or " + "division.");
+            System.out.println("Choose between add, sub, mult, or div.");
             System.out.print("Enter arithmetic operation: ");
             String operation = input.nextLine();
             System.out.println(operation);
 
             // Check the operation through a condition
-            if (operation.equalsIgnoreCase("addition")) {
+            if (operation.equalsIgnoreCase("add")) {
                 result = number1 + number2;
                 total = "sum";
-            } else if (operation.equalsIgnoreCase("subtraction")) {
+            } else if (operation.equalsIgnoreCase("sub")) {
                 result = number1 - number2;
                 total = "difference";
-            } else if (operation.equalsIgnoreCase("multiplication")) {
+            } else if (operation.equalsIgnoreCase("multi")) {
                 result = number1 * number2;
                 total = "product";
-            } else if (operation.equalsIgnoreCase("division")) {
+            } else if (operation.equalsIgnoreCase("div")) {
                 result = number1 / number2;
                 total = "quotient";
             }
