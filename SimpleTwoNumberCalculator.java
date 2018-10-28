@@ -39,28 +39,28 @@ public class SimpleTwoNumberCalculator {
             input.nextLine();
 
             // Ask user for arithmetic operation of choice
-            System.out.println("Choose between add, sub, mult, or div.");
+            System.out.println("Choose between a for addition, s for subtraction, \nm for multiplication, or d for division.");
             System.out.print("Enter arithmetic operation: ");
             String operation = input.nextLine();
             System.out.println(operation);
 
             // Check the operation through a condition
-            if (operation.equalsIgnoreCase("add")) {
+            if (operation.equalsIgnoreCase("a")) {
                 result = number1 + number2;
                 total = "sum";
-            } else if (operation.equalsIgnoreCase("sub")) {
+            } else if (operation.equalsIgnoreCase("s")) {
                 result = number1 - number2;
                 total = "difference";
-            } else if (operation.equalsIgnoreCase("multi")) {
+            } else if (operation.equalsIgnoreCase("m")) {
                 result = number1 * number2;
                 total = "product";
-            } else if (operation.equalsIgnoreCase("div")) {
+            } else if (operation.equalsIgnoreCase("d")) {
                 result = number1 / number2;
                 total = "quotient";
             }
 
             // Display result
-            System.out.printf("The %s of %5.2f and %5.2f is %5.2f.\n", total, number1, number2, result);
+            System.out.printf("The %s of %5.2f and %5.2f is %5.7f.\n", total, number1, number2, result);
 
             // Ask user to continue or exit
 
